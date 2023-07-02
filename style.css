@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* outline:2px solid #6030b1; */
+}
+
+h1, h2, h3, h4, h5,h6, span {
+    color: #242424;
+    text-align: center;
+    line-height: 1.25;
+}
+
+p {
+    line-height: 1.25;
+    font-size: 16px;
+}
+
+.purple-color {
+    color: #6030b1;
+}
+
+section:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+/* NAV */
+
+nav {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6030b1;
+    cursor: pointer;
+}
+
+.nav__link {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav__link--links {
+    margin-left: 25px;
+    font-family: 'Lato';
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nav__link--button {
+    background-color: #6030b1;
+    color: whitesmoke;
+    padding: 8px 16px;
+    border-radius: 25px;
+}
+
+
+/* ABOUT */
+
+#about {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__profil-photo--wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+
+}
+
+
+.about-content__heading {
+    margin-bottom: 20px;
+}
+
+.about-content__text {
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+/* SOCIALS */
+.socials {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.socials i {
+    margin-left: 20px;
+}
+
+
+
+/* AVATAR */
+
+.avatar {
+    width: 100%;
+}
+
+.avatar_img {
+width: 100%;
+}
+
+
+/* TECHNOLOGIES */
+
+#technologies {
+    padding: 50px 0px;
+}
+
+.section-title {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+
+
+.technology-images {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.technologies-image__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    position: relative;
+    padding: 0;
+    margin-bottom: 35px;
+}
+.tech {
+    width: 100px;
+    transform: scale(1);
+    transition: all 300ms ease;
+}
+
+figure:hover .tech {
+    filter:brightness(80%);
+    transform: scale(0.8);
+}
+
+.tech-title {
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 200ms ease;
+    transform: scale(0);
+}
+
+.technologies-image__wrapper figure:hover .tech-title {
+    transform: scale(1);
+}
+
+
+
+/* PROJECTS */
+
+#projects {
+    padding:50px 0px;
+}
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.project {
+    box-shadow: 0px 4px 15px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 20px;
+    position:relative;
+}
+
+.project__img {
+    width: 100%;
+}
+
+.overlay {
+    padding: 20px;
+    position: absolute;
+    bottom: -100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%)
+}
+
+.overlay div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+    padding: 0 50px;
+}
+
+.overlay h1 {
+    font-size: 35px;
+    color: white;
+    line-height: 1.;
+}
+
+.overlay h2 {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+    bottom: 0;
+}
+
+.project__img {
+    transition: all 450ms ease;
+}
+
+.project:hover .project__img{
+    transform: scale(1.05);
+    filter: blur(15px);
+}
+
+.overlay__socials {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 25px;
+}
+
+.overlay p {
+    margin: 10px 0px;
+}
+
+.overlay__socials i {
+    margin-right: 20px;
+    transition: all 5ms;
+}
+
+.overlay__socials i:hover {
+    color: rgb(233, 233, 233);
+    
+}
